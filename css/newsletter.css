@@ -1,0 +1,50 @@
+.newsletter {
+    z-index: 10;
+    background-color: #484652;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 1em;
+    width: 50%;
+    height: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.newsletter > p, .newsletter > h2 {
+    color: white;
+}
+
+.bell-gif {
+    bottom: 1em;
+    left: 0;
+    z-index: -1;
+}
+
+.close-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 25px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-button:hover {
+    background-color: #cc0000;
+}

@@ -1,0 +1,54 @@
+.cookies {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    padding: 0 1rem 1rem;
+    border: 1px solid #268bff;
+    z-index: 6;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateX(-50%) translateY(100%);
+    }
+    to {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideUp 1s ease-out forwards;
+}
+
+.cookie-buttons > button {
+    background-color: #268bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cookies > h5 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 10px 10px;
+}
+
+.cookies > p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 10px 10px;
+}
